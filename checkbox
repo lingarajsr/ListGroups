@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Custom Form Task</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-dark text-white">
+                        <h5 class="mb-0">Custom Registration Form</h5>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <label class="font-weight-bold">Select Your Interests:</label>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="checkWeb">
+                                    <label class="custom-control-label" for="checkWeb">Web Development</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="checkDesign">
+                                    <label class="custom-control-label" for="checkDesign">UI/UX Design</label>
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <div class="form-group">
+                                <label class="font-weight-bold">Notification Preference:</label>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="radioEmail" name="pref" class="custom-control-input">
+                                    <label class="custom-control-label" for="radioEmail">Email Notifications</label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="radioPush" name="pref" class="custom-control-input">
+                                    <label class="custom-control-label" for="radioPush">Push Notifications</label>
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <div class="form-group">
+                                <label class="font-weight-bold">Upload Supporting Documents:</label>
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="customFile">
+                                    <label class="custom-file-label" for="customFile">Choose file...</label>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-info btn-block mt-4">Submit Registration</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.querySelector('.custom-file-input').addEventListener('change', function(e) {
+            var fileName = document.getElementById("customFile").files[0].name;
+            var nextSibling = e.target.nextElementSibling;
+            nextSibling.innerText = fileName;
+        });
+    </script>
+</body>
+</html>
