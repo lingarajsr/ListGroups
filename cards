@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 4 Cards</title>
+
+    <!-- Bootstrap 4 CSS CDN -->
+    <link rel="stylesheet" 
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+
+<div class="container mt-5">
+    
+    <div class="row">
+        <div class="col-md-12">
+            <h2 class="text-center mb-4">Bootstrap 4 Cards Example</h2>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <!-- Card 1: Basic Card -->
+        <div class="col-md-3 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Basic Card</h5>
+                    <p class="card-text">This is a simple Bootstrap 4 card with basic content.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2: Card with Header and Footer -->
+        <div class="col-md-3 mb-4">
+            <div class="card">
+                <div class="card-header">
+                    Card Header
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Header & Footer</h5>
+                    <p class="card-text">This card includes both header and footer.</p>
+                </div>
+                <div class="card-footer">
+                    Card Footer
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3: Card with Image -->
+        <div class="col-md-3 mb-4">
+            <div class="card">
+                <img src="https://via.placeholder.com/300x150" 
+                     class="card-img-top" alt="Sample Image">
+                <div class="card-body">
+                    <h5 class="card-title">Image Card</h5>
+                    <p class="card-text">This card includes an image using card-img-top class.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 4: Complete Styled Card -->
+        <div class="col-md-3 mb-4">
+            <div class="card border-primary">
+                <div class="card-header bg-primary text-white">
+                    Featured
+                </div>
+                <img src="https://via.placeholder.com/300x150" 
+                     class="card-img-top" alt="Sample Image">
+                <div class="card-body">
+                    <h5 class="card-title">Complete Card</h5>
+                    <p class="card-text">This card contains header, image, body, and footer with styling.</p>
+                </div>
+                <div class="card-footer text-muted">
+                    2 days ago
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Bootstrap 4 JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
