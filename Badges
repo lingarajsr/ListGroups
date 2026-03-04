@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Badges Task</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="container mt-5">
+        
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="mb-4">Bootstrap Badge Utilities</h2>
+
+                <section class="mb-4">
+                    <h4>Contextual Badges</h4>
+                    <span class="badge badge-primary">Primary</span>
+                    <span class="badge badge-secondary">Secondary</span>
+                    <span class="badge badge-success">Success</span>
+                    <span class="badge badge-danger">Danger</span>
+                    <span class="badge badge-warning">Warning</span>
+                    <span class="badge badge-info">Info</span>
+                    <span class="badge badge-light border">Light</span>
+                    <span class="badge badge-dark">Dark</span>
+                </section>
+
+                <section class="mb-4">
+                    <h4>Pill Badges</h4>
+                    <span class="badge badge-pill badge-primary">Pill Primary</span>
+                    <span class="badge badge-pill badge-success">Pill Success</span>
+                    <span class="badge badge-pill badge-danger">Pill Danger</span>
+                </section>
+
+                <section class="mb-4">
+                    <h4>Badges within Buttons</h4>
+                    <button type="button" class="btn btn-primary">
+                        Messages <span class="badge badge-light">4</span>
+                    </button>
+                    
+                    <button type="button" class="btn btn-dark ml-2">
+                        Notifications <span class="badge badge-danger badge-pill">99+</span>
+                    </button>
+                </section>
+
+                <section class="mb-4">
+                    <h4>Heading Badges (Auto-scaling)</h4>
+                    <h1>Example Heading <span class="badge badge-secondary">New</span></h1>
+                    <h3>Smaller Heading <span class="badge badge-secondary">Update</span></h3>
+                </section>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
