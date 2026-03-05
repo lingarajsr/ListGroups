@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 4 Utility Classes Task</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+
+<div class="container my-5 shadow-sm p-5 bg-white rounded">
+    <h2 class="text-center text-uppercase text-primary font-weight-bold mb-4">
+        Utility Classes Showcase
+    </h2>
+
+    <hr class="my-4">
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="p-3 m-2 border border-info rounded bg-info text-white">
+                <h4>Spacing & Borders</h4>
+                <p class="mb-0">This box uses padding (p-3), margins (m-2), and rounded info-colored borders.</p>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="p-3 m-2 border border-secondary rounded position-relative" style="height: 120px;">
+                <h4>Positioning</h4>
+                <div class="position-absolute fixed-bottom p-2 text-right">
+                    <span class="badge badge-warning text-dark">Absolute Bottom-Right</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-4 p-3 bg-dark text-white text-center rounded d-none d-lg-block">
+        <strong>Visibility Note:</strong> This bar is only visible on large (desktop) screens using "d-none d-lg-block".
+    </div>
+
+    <div class="text-center mt-5">
+        <button class="btn btn-outline-danger btn-sm text-capitalize">Small Outline Button</button>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
